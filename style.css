@@ -205,7 +205,7 @@ nav li {
     -webkit-text-fill-color: transparent; 
 }
 .hero h2 {
-	font-size: var(--size-one-up);
+	font-size: var(--size-two-up);
 	text-align: center;
 }
 @media (min-width: 420px) {
@@ -227,7 +227,7 @@ nav li {
 	    -webkit-text-fill-color: transparent;
 	}
 	.hero h2 {
-		font-size: var(--size-two-up);
+		font-size: var(--size-three-up);
 	}
 }
 @media (min-width: 1200px) {
