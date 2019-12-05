@@ -148,9 +148,9 @@ nav li {
 	top: 1.5rem;
 }
 .navbar-toggle svg {
-		height: 36px;
-		width: 36px;
-	}
+	height: 30px;
+	width: 30px;
+}
 .logo:hover, a:hover {
 	color: var(--color-secondary-blue);
 }
@@ -190,6 +190,10 @@ nav li {
 	}
 	.navbar-toggle {
 		right: 2rem;
+	}
+	.navbar-toggle svg {
+		height: 36px;
+		width: 36px;
 	}
 }
 /* ==========================================================================
