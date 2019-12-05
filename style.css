@@ -136,13 +136,11 @@ nav li {
 	font-size: var(--size-two-up);
 	text-decoration: none;
 }
-.logo {
-	padding-left: 2rem;
-}
+
 .navbar-toggle {
 	cursor: pointer;
 	position: absolute;
-	right: 2rem;
+	right: 1rem;
 	top: 1.5rem;
 }
 .navbar-toggle svg {
@@ -182,31 +180,52 @@ nav li {
 		width: 130%;
 	}
 }
-
+@media (min-width: 420px) {
+	.logo {
+		padding-left: 2rem;
+	}
+	.navbar-toggle {
+		right: 2rem;
+	}
+}
 /* ==========================================================================
  Homepage
 ========================================================================== */
 .hero {
-	margin: 8em 0;
+	margin: 3em 0;
 }
 .image-mask {
 	background-size: cover;
-    background: url(images/portrait.JPG) no-repeat fixed;
+    background: url(images/portrait.JPG);
     background-position: center;
     font-family: var(--font-secondary);
     font-size: 15vw;
-    font-weight: 800;
-    line-height: 1.2;
+    line-height: 1;
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
 .hero h2 {
+	font-size: var(--size-two-up);
 	text-align: center;
 }
 @media (min-width: 320px) {
 	html {
 		font-size: 18px;
+	}
+}
+@media (min-width: 768px) {
+	.hero {
+		margin: 8em 0;
+	}
+	.image-mask {
+	    background: url(images/portrait.JPG) no-repeat fixed;
+	    background-position: center;
+	    font-size: 15vw;
+	    font-weight: 800;
+	    line-height: 1.2;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
 	}
 }
 @media (min-width: 1200px) {
