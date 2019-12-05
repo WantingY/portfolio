@@ -1,0 +1,496 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans&display=swap');
+
+/* ==========================================================================
+ Master page layout
+========================================================================== */
+body {
+	margin: 0;
+}
+main {
+	margin: auto;
+	max-width: 45rem;
+	padding: 2rem;
+}
+img {
+	max-width: 100%;
+}
+figure {
+	text-align: center;
+}
+figcaption {
+	font-size: var(--size-one-down);
+}
+/* ==========================================================================
+ Colors
+========================================================================== */
+html {
+	--color-primary-blue: #85B8C8;
+	--color-secondary-blue: #3D7181;
+	--color-primary-yellow: #F9E79F;
+	--color-secondary-yellow: #B9770E;
+}
+a {
+	color: #000;
+}
+/* ==========================================================================
+ Typography
+========================================================================== */
+html {
+	--font-primary: 'Noto Serif', serif;
+	--font-secondary: 'Open Sans', sans-serif;
+
+	--size-ratio: 1.2;
+
+	--size-one-up: calc( 1rem * var(--size-ratio));
+	--size-two-up: calc(var(--size-one-up) * var(--size-ratio));
+	--size-three-up: calc(var(--size-two-up) * var(--size-ratio));
+	--size-four-up: calc(var(--size-three-up) * var(--size-ratio));
+	--size-five-up: calc(var(--size-four-up) * var(--size-ratio));
+	--size-six-up: calc(var(--size-five-up) * var(--size-ratio));
+
+	--size-one-down: calc( 1rem / var(--size-ratio));
+	
+	font-family: var(--font-primary); 
+	font-size: 16px;
+	line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-secondary);
+}
+h1 {
+	font-family: var(--font-primary);
+	line-height: 1.5;
+} 
+h2 {
+	color: var(--color-secondary-blue);
+}
+h3 {
+	margin: 0;
+}
+h4 {
+	color: #aaa;
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+ Component
+========================================================================== */
+/* button */
+
+.link-button {
+	background-color: var(--color-primary-blue);
+	border-radius: .2rem;
+	color: white;
+	display: inline-block;
+	font-family: var(--font-secondary);
+	margin: 10px auto;
+	padding: .5rem 1rem;
+	text-decoration: none;
+}
+.link-button:active {
+	background-color: var(--color-primary-blue);	
+}
+.link-button:focus {
+	background-color: var(--color-primary-blue);
+}
+.link-button:hover {
+	background-color: var(--color-primary-yellow);
+	color: white;
+}
+
+/* header image */
+.hero-img {
+	height: 50vh;
+	object-fit: cover;
+	object-position: center;
+	position: relative;
+	width: 100vw;
+}
+/* ==========================================================================
+ Navigation 
+========================================================================== */
+nav li {
+	margin: 30px auto;
+	padding: 0;
+	text-align: center;
+}
+.navbar {
+    background: linear-gradient(90deg, rgba(113,153,166,0.5) 0%, rgba(163,206,219,0.5) 100%);
+    font-family: var(--font-secondary);
+    padding: 1rem;
+}
+.main-nav {
+	display: none;
+	list-style: none;
+	margin: 15%;
+	padding: 0;
+}
+.active {
+	display: block;
+}
+.logo, .nav-links {
+	color: black;
+	font-size: var(--size-two-up);
+	text-decoration: none;
+}
+.logo {
+	padding-left: 2rem;
+}
+.navbar-toggle {
+	cursor: pointer;
+	position: absolute;
+	right: 2rem;
+	top: 1.5rem;
+}
+.navbar-toggle svg {
+	height: 36px;
+	width: 36px;
+}
+.logo:hover, a:hover {
+	color: var(--color-secondary-blue);
+}
+.navbar-toggle svg:hover {
+	fill: var(--color-secondary-blue);
+}
+.logo:active, a:active {
+	color: var(--color-primary-blue);
+}
+.navbar-toggle svg:active {
+	fill: var(--color-primary-blue);
+}
+.strike {
+	position: relative;
+}
+.strike:hover:after {
+	animation: strike .5s ease-in-out forwards;
+	background: var(--color-secondary-blue);
+	content: ' ';
+	height: 2px;
+	left: -15%;
+	position: absolute;
+	top: 50%;
+	width: 130%;
+}
+@keyframes strike {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 130%;
+	}
+}
+
+/* ==========================================================================
+ Homepage
+========================================================================== */
+.hero {
+	margin: 8em 0;
+}
+.image-mask {
+	background-size: cover;
+    background: url(images/portrait.JPG) no-repeat fixed;
+    background-position: center;
+    font-family: var(--font-secondary);
+    font-size: 15vw;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.hero h2 {
+	text-align: center;
+}
+@media (min-width: 320px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 1200px) {
+	.image-mask {
+		font-size: 13vw;
+	}
+}
+@media (min-width: 1400px) {
+	.image-mask {
+		font-size: 11vw;
+	}
+}@media (min-width: 1600px) {
+	.image-mask {
+		font-size: 9vw;
+	}
+}
+/* ==========================================================================
+ Portfolio
+========================================================================== */
+.portfolio-page-width {
+	max-width: 80%;
+}
+
+blockquote {
+	border-left: 5px solid var(--color-primary-blue);
+	font-style: italic;
+	font-size: var(--size-one-up);
+	margin: 5rem 0;
+	padding: 0 3rem;
+}
+.quote {
+	font-size: 3rem;
+	line-height: 0.6em;
+	opacity: 0.2;
+}
+.grid {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.project-cover {
+	height: 55vh;
+	object-fit: cover;
+	object-position: center;
+	position: relative;
+	width: 100vw;
+}
+.project-text1 {
+	background: linear-gradient(90deg, rgba(249,231,159,0.6) 0%, rgba(250,239,196,0.6) 100%);
+}
+.project-text2 {
+	background: linear-gradient(90deg, rgba(113,153,166,0.5) 0%, rgba(163,206,219,0.5) 100%);
+}
+.project-text1, .project-text2 {
+	font-family: var(--font-secondary);
+	height: 55vh;
+	overflow: hidden;
+	padding: 0 2rem;
+	text-align: center;
+}
+.project-text1 h2, .project-text2 h2 {
+	color: unset;
+	padding-top: 1rem;
+	text-transform: uppercase;
+}
+.project-text1 a {
+	color: var(--color-secondary-yellow);
+	text-decoration: none;
+}
+.project-text2 a {
+	color: var(--color-secondary-blue);
+	text-decoration: none;
+}
+.project-text1 a:hover {
+	color: var(--color-secondary-blue);
+}
+.project-text2 a:hover {
+	color: var(--color-secondary-yellow);
+}
+.project-text1 a:active, .project-text2 a:active {
+	color: var(--color-secondary-blue);
+}
+
+@media (min-width: 320px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 900px) {
+	main {
+		margin: auto;
+		max-width: 45rem;
+	}
+	.grid {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.grid div:nth-child(3) {
+		grid-column-start: 2;
+		grid-column-end: 3; 
+	}
+	.grid div:nth-child(4) {
+		grid-column-start: 1;
+		grid-column-end: 2; 
+		grid-row-start: 2;
+	}
+	.grid div:nth-child(7) {
+		grid-column-start: 2;
+		grid-column-end: 3; 
+	}
+	.grid div:nth-child(8) {
+		grid-column-start: 1;
+		grid-column-end: 2; 
+		grid-row-start: 4;
+	}
+	.grid div:nth-child(11) {
+		grid-column-start: 2;
+		grid-column-end: 3; 
+	}
+	.grid div:nth-child(12) {
+		grid-column-start: 1;
+		grid-column-end: 2; 
+		grid-row-start: 6;
+	}
+}
+/* ==========================================================================
+Project page
+========================================================================== */
+.article-space {
+	margin: 3rem 0;
+}
+.article-bullet {
+	color: #666;
+	font-style: italic;
+	font-weight: 700;
+}
+.article-style {
+	border-left: 3px solid var(--color-primary-blue);
+	padding: 0 2rem;
+}
+.feature-text {
+	font-size: var(--size-one-up);
+	font-weight: 700;
+}
+@media (min-width: 320px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+/* ==========================================================================
+Resume
+========================================================================== */
+
+div ul {
+	display: inline-block;
+	padding-left: 0;
+}
+h1 {
+	margin: 0;
+}
+.resume-layout {
+	padding: 2rem 0;
+}
+.tools-logo {
+	margin-top: 2rem;
+	text-align: center;
+	padding-bottom: 2.5rem;
+}
+.tools-logo img {
+	padding: 1rem;
+}
+.skills-hashtag {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1.5rem;
+	padding-top: 2rem;
+}
+.hashtag-style {
+	background: var(--color-primary-yellow);
+	border-radius: 0 1rem 0 0 ;
+	padding: 0.5rem 1rem;
+}
+@media (min-width: 320px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 660px) {
+	.resume-layout {
+		align-items: flex-start;
+		display: flex;
+		justify-content: space-between;
+	}
+	.resume-left-col {
+		max-width: 40%;
+	}
+	.resume-right-col {
+		margin-left: 5rem;
+		max-width: 60%;
+	}
+	.skills-hashtag {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1.5rem;
+	}
+}
+
+/* ==========================================================================
+Contact form
+========================================================================== */
+input, textarea {
+	border: solid 1px var(--color-secondary-blue);
+	font-family: var(--font-secondary);
+	height: 40px;
+	padding: 0 15px;
+	width: 220px;
+}
+input {
+	border-bottom: none;
+}
+textarea {
+	min-height: 100px;
+	padding-top: 15px;
+}
+input[type="submit"] {
+	background: var(--color-primary-blue);
+	border: none;
+	border-radius: .2rem;
+	color: #fff;
+	margin-top: 1rem;
+	min-width: 252px;
+}
+input[type="submit"]:hover {
+	background-color: var(--color-primary-yellow);
+}
+input[type="submit"]:active {
+	background-color: var(--color-primary-blue);
+}
+.form {
+	text-align: center;
+}
+@media (min-width: 320px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 660px) {
+	input, textarea {
+		font-size: 1rem;
+		height: 60px;
+		width: 500px;
+	}
+	textarea {
+		min-width: 500px;
+		min-height: 160px;
+	}
+	input[type="submit"] {
+		min-width: 532px;
+	}
+}
+
+/* ==========================================================================
+ Footer 
+========================================================================== */
+footer {
+	background: linear-gradient(90deg, rgba(113,153,166,0.5) 0%, rgba(163,206,219,0.5) 100%);
+	margin-top: 10%;
+	padding: 2rem;
+}
+footer p {
+	font-family: var(--font-secondary);
+	font-size:var(--size-one-down);
+	line-height: 24px;
+	padding-top: 30px;
+	text-align: center;
+}
+.social {
+	padding-top: 20px;
+	text-align: center;
+}
+.social a {
+	margin: 1.5rem;
+	text-decoration: none;
+}
+.social img:hover {
+	opacity: 0.6
+}

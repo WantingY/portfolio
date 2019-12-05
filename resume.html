@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wanting Yang - UX Designer</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+	        </span>
+	        <a href="index.html" class="logo"> { WY } </a>
+	        <ul class="main-nav" id="js-menu">
+	            <li>
+	                <a href="portfolio.html" class="nav-links strike">Portfolio</a>
+	            </li>
+	            <li>
+	                <a href="resume.html" class="nav-links strike">Resumé</a>
+	            </li>
+	            <li>
+	                <a href="contact.html" class="nav-links strike">Contact Me</a>
+	            </li>
+	        </ul>
+		</nav>
+		<img src="images/portrait.JPG" alt="portrait" class="hero-img">
+	</header>
+
+	<main>
+		<section>
+			<h2>Experience</h2>
+			<div class="resume-layout">
+				<div class="resume-left-col">
+					<h3>FCG, Inc. Beijing, China</h3>
+					<h4>May 2010 - Aug 2013</h4>
+				</div>
+				
+				<div class="resume-right-col">
+					<h1>Senior Copywriter</h1>
+					<ul>
+						<li>Creates innovative solutions to support marketing, sales and communication strategies.</li>
+						<li>Works as thought-leader and brand storyteller, bringing ideas for projects of all sizes.</li>
+						<li>Writing informative and engaging brand’s voice and tone.</li>
+						<li>Presenting ideas to clients along with succinct to support team decisions.</li>
+						<li>Training partners to write all copywriter’s content.</li>
+						<li>Measure and evaluate outcomes in content and services.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="resume-layout">
+				<div class="resume-left-col">
+					<h3>Newland, Co. Shanghai, China</h3>
+					<h4>Jun 2008 - Jan 2010</h4>
+				</div>
+				
+				<div class="resume-right-col">
+					<h1>Copywriter</h1>
+					<ul>
+						<li>Work with marketing team to create ideas.</li>
+						<li>Providing creative and innovative solutions which offer tangible results.</li>
+						<li>Research target audience needs, pain points, to develop accurate personas.</li>
+						<li>Write copy for all forms of marketing materials to meet audience needs.</li> 
+					</ul>
+				</div>
+			</div>	
+		</section>
+
+		<section>
+			<h2>Skills & Tools</h2>
+			<div class="skills-hashtag">
+				<h3 class="hashtag-style">#UX Design</h3>
+				<h3 class="hashtag-style">#UI Design</h3>
+				<h3 class="hashtag-style">#User Research</h3>
+				<h3 class="hashtag-style">#Persona Mapping</h3>
+				<h3 class="hashtag-style">#Wireframing</h3>
+				<h3 class="hashtag-style">#Prototyping</h3>
+			</div>
+
+			<div class="tools-logo">
+				<img src="images/html.png" alt="html">
+				<img src="images/css.png" alt="css">
+				<img src="images/sketch.png" alt="sketch">
+				<img src="images/invision.png" alt="invision">
+				<img src="images/ps.png" alt="ps">
+				<img src="images/ai.png" alt="ai">
+			</div>
+		</section>
+
+		<section>
+			<h2>Education</h2>
+			<div>
+				<h3>Capital University of Economics and Business</h3>
+				<h4>Beijing, China | 2004-2008 | BA in Advertising</h4>
+				<h3>Austin Community College</h3>
+				<h4>Austin, TX | 2018-Present | AAS in UX/UI Design</h4>
+
+			</div>
+			
+		</section>
+	</main>
+
+	<footer>
+	    <div class="social">
+	        <a href="https://www.linkedin.com/in/wanting-yang-ux/">
+	            <img src="images/linkedin.png" width="24" height="24" alt="Linkedin">
+	        </a>
+	        <a href="https://medium.com/@sashidesuyo">
+	            <img src="images/medium.png" width="24" height="24" alt="Medium">
+	        </a>
+	        <a href="https://www.instagram.com">
+	            <img src="images/instagram.png" width="24" height="24" alt="Instagram">
+	        </a>
+	    </div>
+	    <p>Coded by Wanting Y &copy 2019. All copyright reserved.</p>
+	</footer>
+
+	<script>
+		let mainNav = document.getElementById('js-menu');
+		let navBarToggle = document.getElementById('js-navbar-toggle');
+
+		navBarToggle.addEventListener('click', function () {
+		    
+		    mainNav.classList.toggle('active');
+		});
+	</script>
+
+</body>
+
+</html>

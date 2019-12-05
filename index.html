@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wanting Yang - UX Designer</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+	        </span>
+	        <a href="index.html" class="logo"> { WY } </a>
+	        <ul class="main-nav" id="js-menu">
+	            <li>
+	                <a href="portfolio.html" class="nav-links strike">Portfolio</a>
+	            </li>
+	            <li>
+	                <a href="resume.html" class="nav-links strike">Resumé</a>
+	            </li>
+	            <li>
+	                <a href="contact.html" class="nav-links strike">Contact Me</a>
+	            </li>
+	        </ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="image-mask">WANTING<br>YANG</div>
+			<h2>UX Designer | Senior Copy Writer</h2>
+		</section>
+
+		<section>
+			<h3>About Me</h3>
+			<p>I'm currently pursuing UX/UI degree at Austin Community College Austin, TX. with 4.0 GPA in the major curriculum. I'm also a Copywriter with 5 years of experience in the real estate industry in China.</p>
+			<p>I moved to the U.S at the end of 2014, started a new life journey filling with exciting experiences and challenges. 3 years later, my baby boy Bruce growing up into a toddler, I feel I can get my hands off him a little bit to consider my personal career again. This time, I choose the filed I craving for years - Design.</p>
+			<p>I enjoy collaborating UX study ﻿with ﻿my writing skills, advertising creativity, and marketing knowledge. I was surprised that the transition between the two job field has been so interesting. I believe UX design is the thing that I will do life-long because once again I found the passion for creating has never changed since the very first time I read a book about the Cannes Lions Awards when I was 14.</p>
+			<a href="contact.html" class="link-button" >Let's Talk</a>	
+		</section>
+	</main>
+
+	<footer>
+	    <div class="social">
+	        <a href="https://www.linkedin.com/in/wanting-yang-ux/">
+	            <img src="images/linkedin.png" width="24" height="24" alt="Linkedin">
+	        </a>
+	        <a href="https://medium.com/@sashidesuyo">
+	            <img src="images/medium.png" width="24" height="24" alt="Medium">
+	        </a>
+	        <a href="https://www.instagram.com">
+	            <img src="images/instagram.png" width="24" height="24" alt="Instagram">
+	        </a>
+	    </div>
+	    <p>Coded by Wanting Y &copy 2019. All copyright reserved.</p>
+	</footer>
+
+	<script>
+		let mainNav = document.getElementById('js-menu');
+		let navBarToggle = document.getElementById('js-navbar-toggle');
+
+		navBarToggle.addEventListener('click', function () {
+		    
+		    mainNav.classList.toggle('active');
+		});
+	</script>
+
+</body>
+
+</html>

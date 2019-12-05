@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wanting Yang - UX Designer</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+	        </span>
+	        <a href="index.html" class="logo"> { WY } </a>
+	        <ul class="main-nav" id="js-menu">
+	            <li>
+	                <a href="portfolio.html" class="nav-links strike">Portfolio</a>
+	            </li>
+	            <li>
+	                <a href="resume.html" class="nav-links strike">Resumé</a>
+	            </li>
+	            <li>
+	                <a href="contact.html" class="nav-links strike">Contact Me</a>
+	            </li>
+	        </ul>
+		</nav>
+		<img src="images/flight.JPG" alt="flight" class="hero-img">
+	</header>
+
+	<main>
+		<div class="form">
+			<h2>Contact</h2>
+			<form action="https://formspree.io/mpzzenjn" i method="POST">
+				<input type="text" id="name" name="firstname" placeholder="Your Name" required>
+
+				<input type="email" id="email" name="email" placeholder="Your Email" required>
+
+				<input type="text" id="text" name="text" placeholder="Subject" required>
+
+				<textarea id="textarea" name="textarea" placeholder="Your Message" ></textarea>
+
+				<input type="submit" value="Send" id="submit">
+			</form>	
+		</div>	
+	</main>
+
+	<footer>
+	    <div class="social">
+	        <a href="https://www.linkedin.com/in/wanting-yang-ux/">
+	            <img src="images/linkedin.png" width="24" height="24" alt="Linkedin">
+	        </a>
+	        <a href="https://medium.com/@sashidesuyo">
+	            <img src="images/medium.png" width="24" height="24" alt="Medium">
+	        </a>
+	        <a href="https://www.instagram.com">
+	            <img src="images/instagram.png" width="24" height="24" alt="Instagram">
+	        </a>
+	    </div>
+	    <p>Coded by Wanting Y &copy 2019. All copyright reserved.</p>
+	</footer>
+
+	<script>
+		let mainNav = document.getElementById('js-menu');
+		let navBarToggle = document.getElementById('js-navbar-toggle');
+
+		navBarToggle.addEventListener('click', function () {
+		    
+		    mainNav.classList.toggle('active');
+		});
+	</script>
+
+</body>
+
+</html>

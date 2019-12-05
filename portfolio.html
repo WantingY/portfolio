@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wanting Yang - UX Designer</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+	        </span>
+	        <a href="index.html" class="logo"> { WY } </a>
+	        <ul class="main-nav" id="js-menu">
+	            <li>
+	                <a href="portfolio.html" class="nav-links strike">Portfolio</a>
+	            </li>
+	            <li>
+	                <a href="resume.html" class="nav-links strike">Resumé</a>
+	            </li>
+	            <li>
+	                <a href="contact.html" class="nav-links strike">Contact Me</a>
+	            </li>
+	        </ul>
+		</nav>
+		<img src="images/austin.JPG" alt="flight" class="hero-img">
+	</header>
+
+	<main class="portfolio-page-width">
+		<section>
+			<blockquote>
+				<p><span class="quote">"</span>I think that my job is to observe people and the world, and not to judge them. I always hope to position myself away from so-called conclusions. I would like to leave everything wide open to all the possibilities in the world."</p>
+				<cite>Haruki Murakami</cite>
+			</blockquote>
+			
+			<div class="grid">
+				
+				<img src="images/sentopia.png" alt="sentopia" class="project-cover">
+
+				<div class="project-text1">
+					<h2>Social Networking Application for Seniors</h2>
+					<p>Older adults in social isolation could lead to negative health outcomes. However, the most current social networking apps don't fit their needs perfectly.</p>
+					<a href="project1.html"><p>&#8592 Read full case study</p></a>
+				</div>
+
+				<img src="images/311.png" alt="311" class="project-cover">
+
+				<div class="project-text2">
+					<h2>Austin 311 Redesign</h2>
+					
+					<p>User are unable to review requests from service catalog on current Austin 311 mobile app.</p>
+					<a href=""><p>Check it out &#8594</p></a>
+				</div>
+
+				<img src="images/rommi.png" alt="rommi" class="project-cover">
+
+				<div class="project-text1">
+					<h2>Roomate Finder Application</h2>
+					
+					<p>People live their 20’s mostly share living place with roommates. Finding and keeping ideal roommate get harder as more people swarm into cities.</p>
+					<a href="project2.html"><p>&#8592 Read full case study</p></a>
+				</div>
+
+				<img src="images/smarthome.jpg" alt="smarthome" class="project-cover">
+
+				<div class="project-text2">
+					<h2>Tiny House Project</h2>
+					
+					<p>Recent denizens to Austin need a minimal smart house that is low maintenance because they   want their home to be a permanent residence that will last through the years.</p>
+					<a href=""><p>Check it out &#8594</p></a>
+				</div>
+
+				<img src="images/space.png" alt="space" class="project-cover">
+
+				<div class="project-text1">
+					<h2>Off World Community Project</h2>
+					<p>Design ideation sketch project. Use our imagination to build a space dweller concept.</p>
+					<a href=""><p>&#8592 Check it out</p></a>
+				</div>
+
+				<img src="images/Desk.jpg" alt="desk" class="project-cover">
+
+				<div class="project-text2">
+					<h2>Multi-tasking Desktop Application</h2>
+					<p>Do you have trouble multitasking and being productive on desktop due to lack of screens?</p>
+					<a href=""><p>Read Full Case Study &#8594</p></a>
+				</div>
+			</div>	
+		</section>
+	</main>
+
+	<footer>
+	    <div class="social">
+	        <a href="https://www.linkedin.com/in/wanting-yang-ux/">
+	            <img src="images/linkedin.png" width="24" height="24" alt="Linkedin">
+	        </a>
+	        <a href="https://medium.com/@sashidesuyo">
+	            <img src="images/medium.png" width="24" height="24" alt="Medium">
+	        </a>
+	        <a href="https://www.instagram.com">
+	            <img src="images/instagram.png" width="24" height="24" alt="Instagram">
+	        </a>
+	    </div>
+	    <p>Coded by Wanting Y &copy 2019. All copyright reserved.</p>
+	</footer>
+
+	<script>
+		let mainNav = document.getElementById('js-menu');
+		let navBarToggle = document.getElementById('js-navbar-toggle');
+
+		navBarToggle.addEventListener('click', function () {
+		    
+		    mainNav.classList.toggle('active');
+		});
+	</script>
+
+</body>
+
+</html>

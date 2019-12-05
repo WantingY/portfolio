@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wanting Yang - UX Designer</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+	        </span>
+	        <a href="index.html" class="logo"> { WY } </a>
+	        <ul class="main-nav" id="js-menu">
+	            <li>
+	                <a href="portfolio.html" class="nav-links strike">Portfolio</a>
+	            </li>
+	            <li>
+	                <a href="resume.html" class="nav-links strike">Resumé</a>
+	            </li>
+	            <li>
+	                <a href="contact.html" class="nav-links strike">Contact Me</a>
+	            </li>
+	        </ul>
+		</nav>
+		<img src="images/rommi.png" alt="rommi" class="hero-img">
+	</header>
+
+	<main>
+		<h1>Roommate Finder Application</h1>
+
+		<section class="article-space">
+			<h2>Overview</h2>
+			<p>A few trends of note: 54% of the world’s population live in urban communities, the average marriage age for men is 29 (up from 26 two decades ago) and for women, it is 27 (up from 23 in the same time period). Given these trends, city dwellers tend to spend most of their twenties living with roommates. Finding and keeping a good roommate, however, gets harder as more people swarm into cities.</p>
+			<p>Beijing is the 11th largest city in the world, the population of Beijing has also been growing at breakneck speed. At 2018, the population of Beijing has reached to 21.45 million. The huge numbers of internal migrants brought a big challenge to the house renting market. Therefore, people need improved services of looking for a place to live and people to live.</p>
+			<p>People who live their 20’s mostly share the living place with roommates. Finding and keeping an ideal roommate get harder as more people swarm into cities.</p>
+		</section>
+
+		<section class="article-space">
+			<h2>Target users</h2>
+			<ul class="article-bullet">
+				<li>18-30 years old</li>
+				<li>Unmarried people</li>
+				<li>Living in Beijing or other big cities in China</li>
+			</ul>
+			<p class="feature-text">"People live their 20’s mostly share living place with roommates. Finding and keeping ideal roommate get harder as more people swarm into cities."</p>
+		</section>	
+
+		<section class="article-space">
+			<h2>Interviews</h2>
+			<p>I have run 5 face to face interviews with people who fit my target user's traits. Extract key interviewees' insight, I built a persona. <a href="https://docs.google.com/document/d/1suQ1PDrYI2s4BBDi8lwqsJ4Ph2iYZ9skGTqjdcomzeU/edit?usp=sharing">Interview documents could be checked here.</a></p>	
+		</section>
+
+		<section class="article-space">
+			<h2>Persona</h2>
+			<img src="images/rommi-persona.jpg" alt="korie">
+		</section>
+
+		<section class="article-space">
+			<h2>Journey map</h2>
+			<img src="images/rommi-journey.png" alt="journey-map">
+		</section>		
+
+		<section class="article-space">
+			<h2>Ideation</h2>
+			<img src="images/crazy 8.jpg" alt="crazy8">
+			<p>By refining the ideas from crazy 8 ideation exercise, I came up with 3 features would potentially solve the problems.</p>
+			<p><span class="feature-text">People nearby</span> - Users can see who is using the app seeking for room or roommate around them. Arrange a meet up asap.</p>
+			<p><span class="feature-text">Event and party</span> - Users can create events and parties based on their hobbies. Like people love dogs can go to a dog party to find an ideal roommate. Comic fans can meet up with other fans then become roommates.</p>
+			<p><span class="feature-text">SNS and verify</span> - Users could connect to their SNS and verify identity. These ways for people build up a better reputation of safety and trustworthy.</p>
+			<figure>
+				<img src="images/rommidiagram.png" alt="diagram">
+			</figure>
+		</section>	
+
+		<section class="article-space">
+			<h2>Workflow sketch</h2>
+			<img src="images/roomi-workflow.jpg" alt="workflow">
+			<img src="images/wireframe-skecth.png" alt="roomi-wireframe">
+		</section>
+
+		<section class="article-space">
+			<h2>Wireframe</h2>
+			<img src="images/rommi-wireframe.png" alt="rommi-wireframe">
+		</section>
+
+		<section class="article-space">
+			<h2>Visual design</h2>
+			<img src="images/roomi1.jpg" alt="roomi1">
+			<img src="images/rommi2.jpg" alt="roomi2">
+			<img src="images/roomi3.jpg" alt="roomi3">
+			<img src="images/roomi4.jpg" alt="roomi4">
+		</section>
+	</main>
+
+	<footer>
+	    <div class="social">
+	        <a href="https://www.linkedin.com/in/wanting-yang-ux/">
+	            <img src="images/linkedin.png" width="24" height="24" alt="Linkedin">
+	        </a>
+	        <a href="https://medium.com/@sashidesuyo">
+	            <img src="images/medium.png" width="24" height="24" alt="Medium">
+	        </a>
+	        <a href="https://www.instagram.com">
+	            <img src="images/instagram.png" width="24" height="24" alt="Instagram">
+	        </a>
+	    </div>
+	    <p>Coded by Wanting Y &copy 2019. All copyright reserved.</p>
+	</footer>
+
+	<script>
+		let mainNav = document.getElementById('js-menu');
+		let navBarToggle = document.getElementById('js-navbar-toggle');
+
+		navBarToggle.addEventListener('click', function () {
+		    
+		    mainNav.classList.toggle('active');
+		});
+	</script>
+
+</body>
+
+</html>
